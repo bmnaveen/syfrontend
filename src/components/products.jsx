@@ -42,7 +42,7 @@ useEffect(()=>{
           }
         }
         
-       await axios.post(`http://localhost:5555/addproduct`,product,config).then((res)=>{
+       await axios.post(`https://syo-backend.herokuapp.com/addproduct`,product,config).then((res)=>{
           console.log(res.data)
             return alert(res.data)
           

@@ -22,7 +22,7 @@ const SignIn = () => {
         return alert("Empty fields")
       }
     }
-   await axios.post(`http://localhost:5555/login`,user).then((res)=>{
+   await axios.post(`https://syo-backend.herokuapp.com/login`,user).then((res)=>{
     
       if(res.data!==false) {
          sessionStorage.setItem("type",JSON.stringify(res.data));

@@ -21,7 +21,7 @@ const Allproducts = () => {
     
 };
   const getProduct=()=>{
-    axios.get("http://localhost:5555/product",config).then((res)=>{
+    axios.get("https://syo-backend.herokuapp.com/product",config).then((res)=>{
       
       setAllProducts(res.data)
     }).catch((err)=>{
